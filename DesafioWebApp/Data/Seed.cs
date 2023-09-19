@@ -20,7 +20,7 @@ namespace DesafioWebApp.Data
                     {
                         new Club()
                         {
-                            Titulo = "Running Club 1",
+                            Titulo = "Clube de Corrida 1",
                             Imagem = "https://www.eatthis.com/wp-content/uploads/sites/4/2020/05/running.jpg?quality=82&strip=1&resize=640%2C360",
                             Descricao = "Essa é a descrição do primeiro cinema",
                             CategoriaClub = CategoriaClub.Cidade,
@@ -33,7 +33,7 @@ namespace DesafioWebApp.Data
                          },
                         new Club()
                         {
-                            Titulo = "Running Club 2",
+                            Titulo = "Clube de Corrida 2",
                             Imagem = "https://www.eatthis.com/wp-content/uploads/sites/4/2020/05/running.jpg?quality=82&strip=1&resize=640%2C360",
                             Descricao = "Essa é a descrição do primeiro cinema",
                             CategoriaClub = CategoriaClub.Endurance,
@@ -46,7 +46,7 @@ namespace DesafioWebApp.Data
                         },
                         new Club()
                         {
-                            Titulo = "Running Club 3",
+                            Titulo = "Clube de Corrida 3",
                             Imagem = "https://www.eatthis.com/wp-content/uploads/sites/4/2020/05/running.jpg?quality=82&strip=1&resize=640%2C360",
                             Descricao = "Essa é a descrição do primeiro club",
                             CategoriaClub = CategoriaClub.Trilha,
@@ -59,7 +59,7 @@ namespace DesafioWebApp.Data
                         },
                         new Club()
                         {
-                            Titulo = "Running Club 3",
+                            Titulo = "Clube de Corrida 3",
                             Imagem = "https://www.eatthis.com/wp-content/uploads/sites/4/2020/05/running.jpg?quality=82&strip=1&resize=640%2C360",
                             Descricao = "Essa é a descrição do primeiro club",
                             CategoriaClub = CategoriaClub.Cidade,
