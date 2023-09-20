@@ -85,3 +85,5 @@
 /home/carlos/RiderProjects/DesafioWebApp/DesafioWebApp/bin/Debug/net6.0/System.Text.Encodings.Web.dll
 /home/carlos/RiderProjects/DesafioWebApp/DesafioWebApp/bin/Debug/net6.0/System.Text.Json.dll
 /home/carlos/RiderProjects/DesafioWebApp/DesafioWebApp/bin/Debug/net6.0/runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll
+/home/carlos/RiderProjects/DesafioWebApp/DesafioWebApp/bin/Debug/net6.0/CloudinaryDotNet.dll
+/home/carlos/RiderProjects/DesafioWebApp/DesafioWebApp/bin/Debug/net6.0/Newtonsoft.Json.dll
