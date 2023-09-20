@@ -27,4 +27,9 @@ public class ClubController : Controller
         Club club = await _clubRepository.getByIdAsyncTask(id);
         return View(club);
     }
+
+    public IActionResult Create()
+    {
+        return View();
+    }
 }
