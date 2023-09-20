@@ -25,4 +25,22 @@ public class CorridaController : Controller
         Corrida corrida = await _corridaRepository.getByIdAsyncTask(id);
         return View(corrida);
     }
+    
+    public IActionResult Create()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Create(Corrida corrida)
+    {
+        if (!ModelState.IsValid)
+        {
+            return View(corrida);
+        }
+
+        _corridaRepository.Add(corrida);
+        return RedirectToAction("Index");
+    }
+    
 }
