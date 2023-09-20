@@ -1,21 +1,28 @@
 using DesafioWebApp.Data;
+using DesafioWebApp.Interfaces;
 using DesafioWebApp.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace DesafioWebApp.Controllers;
 
 public class CorridaController : Controller
 {
-    private readonly ApplicationDbContext _context;
+    private readonly ICorridaRepository _corridaRepository;
 
-    public CorridaController(ApplicationDbContext context)
+    public CorridaController(ICorridaRepository corridaRepository)
     {
-        _context = context;
+        _corridaRepository = corridaRepository;
     }
     // GET
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
-        List<Corrida> corridas = _context.Corridas.ToList();
+        IEnumerable<Corrida> corridas = await _corridaRepository.GetAll();
         return View(corridas);
+    }
+    public async Task<IActionResult> Detail(int id)
+    {
+        Corrida corrida = await _corridaRepository.getByIdAsyncTask(id);
+        return View(corrida);
     }
 }
