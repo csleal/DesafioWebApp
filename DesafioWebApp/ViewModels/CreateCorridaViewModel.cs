@@ -11,4 +11,5 @@ public class CreateCorridaViewModel
     public Endereco Endereco { get; set; }
     public IFormFile Imagem { get; set; }
     public CategoriaCorrida CategoriaCorrida { get; set; }
+    public string AppUserId { get; set; }
 }

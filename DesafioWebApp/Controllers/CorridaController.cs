@@ -11,11 +11,13 @@ public class CorridaController : Controller
 {
     private readonly ICorridaRepository _corridaRepository;
     private readonly IPhotoService _photoService;
+    private readonly IHttpContextAccessor _httpContextAccessor;
 
-    public CorridaController(ICorridaRepository corridaRepository, IPhotoService photoService)
+    public CorridaController(ICorridaRepository corridaRepository, IPhotoService photoService, IHttpContextAccessor httpContextAccessor)
     {
         _corridaRepository = corridaRepository;
         _photoService = photoService;
+        _httpContextAccessor = httpContextAccessor;
     }
     // GET
     public async Task<IActionResult> Index()
@@ -31,7 +33,9 @@ public class CorridaController : Controller
     
     public IActionResult Create()
     {
-        return View();
+        var curUserID = _httpContextAccessor.HttpContext?.User.GetUserId();
+        var createCorridaViewModel = new CreateCorridaViewModel { AppUserId = curUserID };
+        return View(createCorridaViewModel);
     }
 
     [HttpPost]
@@ -46,6 +50,7 @@ public class CorridaController : Controller
                 Titulo = corridaVM.Titulo,
                 Descricao = corridaVM.Descricao,
                 Imagem = result.Url.ToString(),
+                AppUserId = corridaVM.AppUserId,
                 Endereco = new Endereco
                 {
                     Rua = corridaVM.Endereco.Rua,

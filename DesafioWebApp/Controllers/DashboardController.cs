@@ -23,4 +23,9 @@ public class DashboardController : Controller
         };
         return View(dashboardViewModel);
     }
+
+    public IActionResult EditUserProfile()
+    {
+        throw new NotImplementedException();
+    }
 }

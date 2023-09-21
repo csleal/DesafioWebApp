@@ -11,4 +11,5 @@ public class CreateClubViewModel
     public Endereco Endereco { get; set; }
     public IFormFile Imagem { get; set; }
     public CategoriaClub CategoriaClub { get; set; }
+    public string AppUserId { get; set; }
 }
