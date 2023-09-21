@@ -1,4 +1,6 @@
+using CloudinaryDotNet.Actions;
 using DesafioWebApp.Interfaces;
+using DesafioWebApp.Models;
 using DesafioWebApp.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
@@ -22,10 +24,5 @@ public class DashboardController : Controller
             Clubs = userClubs
         };
         return View(dashboardViewModel);
-    }
-
-    public IActionResult EditUserProfile()
-    {
-        throw new NotImplementedException();
     }
 }
