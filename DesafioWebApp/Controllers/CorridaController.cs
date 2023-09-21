@@ -126,4 +126,21 @@ public class CorridaController : Controller
         }
     }
     
+    public async Task<IActionResult> Delete(int id)
+    {
+        var corridaDetails = await _corridaRepository.GetByIdAsync(id);
+        if (corridaDetails == null) return View("Error");
+        return View(corridaDetails);
+    }
+
+    [HttpPost, ActionName("Delete")]
+    public async Task<IActionResult> DeleteCorrida(int id)
+    {
+        var corridaDetails = await _corridaRepository.GetByIdAsync(id);
+        if (corridaDetails == null) return View("Error");
+
+        _corridaRepository.Delete(corridaDetails);
+        return RedirectToAction("Index");
+    }
+    
 }
