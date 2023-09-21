@@ -54,4 +54,43 @@ public class AccountController : Controller
         return View(loginViewModel);
     }
     
+    [HttpGet]
+    public IActionResult Register()
+    {
+        var reponse = new RegisterViewModel();
+        return View(reponse);
+    }
+    
+    [HttpPost]
+    public async Task<IActionResult> Register(RegisterViewModel registerViewModel)
+    {
+        if (!ModelState.IsValid) return View(registerViewModel);
+
+        var user = await _userManager.FindByEmailAsync(registerViewModel.Email);
+        if (user != null)
+        {
+            TempData["Error"] = "Este endereço de email já está em uso";
+            return View(registerViewModel);
+        }
+
+        var newUser = new AppUser()
+        {
+            Email = registerViewModel.Email,
+            UserName = registerViewModel.Email
+        };
+        var newUserResponse = await _userManager.CreateAsync(newUser, registerViewModel.Passwd);
+
+        if (newUserResponse.Succeeded)
+            await _userManager.AddToRoleAsync(newUser, UserRoles.User);
+
+        return RedirectToAction("Index", "Corrida");
+    }
+    
+    [HttpGet]
+    public async Task<IActionResult> Logout()
+    {
+        await _signInManager.SignOutAsync();
+        return RedirectToAction("Index", "Corrida");
+    }
+    
 }

@@ -9,7 +9,7 @@ public class AppUser : IdentityUser
     public int? Pace { get; set; }
     public int? Quilometragem { get; set; }
     [ForeignKey("Endereco")]
-    public int EnderecoId { get; set; }
+    public int? EnderecoId { get; set; }
     public Endereco? Endereco { get; set; }
     public ICollection<Club> Clubs { get; set; }
     public ICollection<Corrida> Corridas { get; set; }
