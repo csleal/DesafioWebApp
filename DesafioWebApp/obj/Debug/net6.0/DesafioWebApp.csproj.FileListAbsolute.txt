@@ -87,3 +87,8 @@
 /home/carlos/RiderProjects/DesafioWebApp/DesafioWebApp/bin/Debug/net6.0/runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll
 /home/carlos/RiderProjects/DesafioWebApp/DesafioWebApp/bin/Debug/net6.0/CloudinaryDotNet.dll
 /home/carlos/RiderProjects/DesafioWebApp/DesafioWebApp/bin/Debug/net6.0/Newtonsoft.Json.dll
+/home/carlos/RiderProjects/DesafioWebApp/DesafioWebApp/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/home/carlos/RiderProjects/DesafioWebApp/DesafioWebApp/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/home/carlos/RiderProjects/DesafioWebApp/DesafioWebApp/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/home/carlos/RiderProjects/DesafioWebApp/DesafioWebApp/bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll
+/home/carlos/RiderProjects/DesafioWebApp/DesafioWebApp/bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll
