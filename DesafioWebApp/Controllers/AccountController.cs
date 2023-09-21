@@ -86,7 +86,7 @@ public class AccountController : Controller
         return RedirectToAction("Index", "Corrida");
     }
     
-    [HttpGet]
+    [HttpPost]
     public async Task<IActionResult> Logout()
     {
         await _signInManager.SignOutAsync();
