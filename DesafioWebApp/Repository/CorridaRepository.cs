@@ -18,9 +18,14 @@ public class CorridaRepository : ICorridaRepository
         return await _context.Corridas.ToListAsync();
     }
 
-    public async Task<Corrida> getByIdAsyncTask(int id)
+    public async Task<Corrida> GetByIdAsync(int id)
     {
         return await _context.Corridas.Include(i => i.Endereco).FirstOrDefaultAsync(i => i.Id == id);
+    }
+    
+    public async Task<Corrida> GetByIdAsyncNoTracking(int id)
+    {
+        return await _context.Corridas.Include(i => i.Endereco).AsNoTracking().FirstOrDefaultAsync(i => i.Id == id);
     }
 
     public Task<IEnumerable<Corrida>> GetAllCorridasByCity(string city)

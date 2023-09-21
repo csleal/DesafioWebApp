@@ -18,9 +18,9 @@
   </div>
   
   <div class="form-group">
-    <label asp-for="CategoriaClub">Categoria do Clube</label>
-    <select asp-for="CategoriaClub" asp-items="@Html.GetEnumSelectList<CategoriaClub>()">
-      <option>--Selecione--</option>
+    <label asp-for="CategoriaClub">Categoria do Club</label>
+    <select asp-for="CategoriaClub" asp-items="@Html.GetEnumSelectList<CategoriaClub>()" class="form-control">
+      <option selected="selected" value="">--Selecione--</option>
     </select>
     <span asp-validation-for="CategoriaClub" class="text-danger"></span>
   </div>

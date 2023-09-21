@@ -24,6 +24,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2x1Yi9EZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/carlos/RiderProjects/DesafioWebApp/DesafioWebApp/Views/Club/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2x1Yi9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/carlos/RiderProjects/DesafioWebApp/DesafioWebApp/Views/Club/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2x1Yi9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -34,6 +38,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/home/carlos/RiderProjects/DesafioWebApp/DesafioWebApp/Views/Corrida/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29ycmlkYS9EZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/carlos/RiderProjects/DesafioWebApp/DesafioWebApp/Views/Corrida/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29ycmlkYS9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/carlos/RiderProjects/DesafioWebApp/DesafioWebApp/Views/Corrida/Index.cshtml]
