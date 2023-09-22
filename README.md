@@ -10,7 +10,7 @@ Esta plataforma irá ajudá-lo a encontrar clubes, agendar eventos e conhecer ou
 
 ## Imagens
 
-<img src="/imagem.jpg" width="550">
+<img src="/imagem-projeto.png">
 
 ## Como usar 
 
