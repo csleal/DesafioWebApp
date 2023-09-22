@@ -13,13 +13,13 @@
 
     <div class="form-group">
         <label asp-for="Descricao">Descrição</label>
-        <input asp-for="Descricao" class="form-control" placeholder="Insira a descrição do seu Corridae">
+        <input asp-for="Descricao" class="form-control" placeholder="Insira a descrição da sua Corrida">
         <span asp-validation-for="Descricao" class="text-danger"></span>
     </div>
 
     <div class="form-group">
         <label asp-for="CategoriaCorrida">Categoria de Corrida</label>
-        <select asp-for="CategoriaCorrida" asp-items="@Html.GetEnumSelectList<CategoriaCorrida>()">
+        <select asp-for="CategoriaCorrida" asp-items="@Html.GetEnumSelectList<CategoriaCorrida>()" class="form-control">
             <option>--Selecione--</option>
         </select>
         <span asp-validation-for="CategoriaCorrida" class="text-danger"></span>

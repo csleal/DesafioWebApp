@@ -22,8 +22,9 @@ public class UserController : Controller
             {
                 Id = user.Id,
                 UserName = user.UserName,
-                Pace = user.Pace,
+                Ritmo = user.Ritmo,
                 Quilometragem = user.Quilometragem,
+                ProfileImageUrl = user.ProfileImageUrl,
             };
             result.Add(userViewModel);
         }
@@ -37,7 +38,7 @@ public class UserController : Controller
         {
             Id = user.Id,
             UserName = user.UserName,
-            Pace = user.Pace,
+            Pace = user.Ritmo,
             Quilometragem = user.Quilometragem,
         };
         return View(userDetailViewModel);
